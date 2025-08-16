@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Dev Community - AIプログラミング学習コミュニティ</title>
+    <style>
+        :root {
+            --primary-color: #6a11cb;
+            --secondary-color: #2575fc;
+            --background-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg-color: #1e1e1e;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Users/kantakobira/Documents/写真動画/kobira-harbor/KOBIRA-HARBOR-4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .discord-button {
+            display: inline-block;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: white;
+            background: #5865F2; /* Discord Blue */
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .discord-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        .section-description {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg-color);
+            padding: 30px;
+            border-radius: 12px;
+            width: 250px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        .target-list {
+            display: inline-block;
+            text-align: left;
+            list-style: '✅ ';
+            padding-left: 20px;
+        }
+        
+        .target-list li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        #cta {
+            background-color: var(--card-bg-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            section h2 {
+                font-size: 2rem;
+            }
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>未来を創るAIプログラミングを、仲間と共に。</h1>
+            <p>初心者から経験者まで、共に学び、成長できるコミュニティ「AI-Dev Community」</p>
+            <a href="https://www.kobira.co.jp/" class="discord-button" target="_blank" rel="noopener noreferrer">今すぐDiscordに参加する</a>
+            <!-- TODO: href="#" を実際のDiscord招待リンクに置き換えてください -->
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>AI-Dev Communityとは？</h2>
+                <p class="section-description">
+                    AI-Dev Communityは、AI技術の学習と開発に情熱を持つ人々が集まる場所です。
+                    日進月歩で進化するAIの世界で、一人で学習するのは大変です。
+                    このコミュニティでは、仲間と知識を共有し、疑問を解決し合いながら、共に最前線を目指します。
+                </p>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>このコミュニティで得られること</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>最新技術の共有</h3>
+                        <p>論文や最新ツールの情報が飛び交い、常に知識をアップデートできます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>質問とコードレビュー</h3>
+                        <p>行き詰まった時は、経験豊富なメンバーに質問したり、コードレビューを受けられます。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>共同プロジェクト</h3>
+                        <p>仲間とチームを組み、実践的な開発に挑戦。ポートフォリオを充実させましょう。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="target">
+            <div class="container">
+                <h2>こんな方におすすめ</h2>
+                <ul class="target-list">
+                    <li>AIプログラミングを学び始めたい方</li>
+                    <li>独学で行き詰まりを感じている方</li>
+                    <li>実践的なポートフォリオを作りたい方</li>
+                    <li>同じ目標を持つ仲間と繋がりたい方</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="cta">
+            <div class="container">
+                <h2>さあ、あなたも参加しませんか？</h2>
+                <p class="section-description">未来のテクノロジーを、私たちと一緒に探求しましょう。<br>あなたの参加を心からお待ちしています。</p>
+                <a href="https://www.kobira.co.jp/" class="discord-button" target="_blank" rel="noopener noreferrer">Discordでコミュニティに参加する</a>
+                <!-- TODO: href="#" を実際のDiscord招待リンクに置き換えてください -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI-Dev Community. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
